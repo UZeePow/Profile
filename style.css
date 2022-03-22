@@ -1,0 +1,46 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* adjust typography defaults */
+  body {
+    margin: 1rem;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* images and videos max out at full width */
+  img,
+  video {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  
+  h1 {
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+    background-color: #26428B;
+  }
+  h2 {
+    font-size: 20px;
+    color: #2079C7;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: -5px;
+    color: grey;
+    font-weight: normal;
+  }
