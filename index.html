@@ -8,97 +8,41 @@
     <title>Portfolio Site</title>
 
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/style.css" />
 
     <!-- import the webpage's javascript file -->
-    <script src="./script.js" defer></script>
+    <script src="/script.js" defer></script>
+    <script src="htpps://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   </head>
   <body>
-    <!-- this is the start of content -->
-    <h1>Hyunzee Lee</h1>
+    <!-- top nav bar -->
+    <div class="topnav">
+      <a href="/">Home</a>
+      <a href="resume.html">Resume</a>
+    </div>
 
-    <!-- Work experience -->
-    <h2>Work Experience</h2>
+    <button onclick="gotoTop()" id="topBtn" title="Go to top">Top</button>
 
-    <h3>
-      UCSD Department of Mathematics,
-      <span style="font-weight: normal">
-        La Jolla — <i>Web App Developer</i>
-      </span>
-    </h3>
-    <h4>January 2020 - May 2020</h4>
-    <ul>
-      <li>
-        Recreated a monoalphabetic encryption system from Java to AngularJS
-      </li>
-      <li>Estimated one quarter of use by 100 people</li>
-    </ul>
+    <p>
+      The Website is a work-in-progress. Currently I am working on a color
+      recognition program that will be put in the front page.  Apologies if it looks a little blank,
+      the design will come after the program. In the meanwhile,
+      feel free to check out my resume!
+    </p>
+<hr />
+    
+    Currently only displays picture...
+    <!-- File selection -->
+    <label for="myfile">Select a file:</label>
+    <input
+      type="file"
+      id="myfile"
+      name="myfile"
+      onchange="onFileSelected(event)"
+    />
+    <img id="fileImg" height="100" />
 
-    <h3>
-      McDonalds,
-      <span style="font-weight: normal">
-        Stevenson Ranch — <i>Crew Member</i>
-      </span>
-    </h3>
-    <h4>July 2021 - September 2021</h4>
-    <ul>
-      <li>
-        Worked together with coworkers to provide fast and great customer
-        service
-      </li>
-    </ul>
-
-    <!-- Projects -->
-    <h2>Projects</h2>
-
-    <h3>
-      Overflowed
-      <span style="font-weight: normal"> — <i>Unity Game</i> </span>
-    </h3>
-    <ul>
-      <li>Used the SCRUM development cycle to implement features weekly</li>
-      <li>
-        Collaborated with artists and developers using GitHub, Visual Studio,
-        and C#
-      </li>
-    </ul>
-
-    <h3>
-      MeowBot
-      <span style="font-weight: normal"> — <i>Discord Bot</i> </span>
-    </h3>
-    <ul>
-      <li>Created and personalized a Discord bot using Node.js</li>
-    </ul>
-
-    <h3>
-      Dictionary Trie
-      <span style="font-weight: normal"> — <i>Programmed Dictionary</i> </span>
-    </h3>
-    <ul>
-      <li>Created a Trie data structure dictionary using C++</li>
-      <li>Included insert, find, and prediction completion functions</li>
-    </ul>
-
-    <!-- Student Organizations -->
-    <h2>Student Organizations</h2>
-
-    <h3>
-      Cal Animage Beta,
-      <span style="font-weight: normal"> UCSD — <i>Club Officer</i> </span>
-    </h3>
-    <h4>September 2019 - November 2021</h4>
-    <ul>
-      <li>Managed the club website for upcoming events using HTML and CSS</li>
-      <li>Supervised and assisted in the management of the club convention</li>
-    </ul>
-
-    <!-- Technical Skills -->
-    <h2>Technical Skills</h2>
-
-    <h3>Certifications</h3>
-    <p>Google IT Automation with Python Specialization</p>
-    <h3>Other Relevant Skills</h3>
-    <p>Github | Visual Studio | VIM | Unity | Unix | Microsoft Office</p>
+    <script></script>
+    <p id="color"></p>
   </body>
 </html>
